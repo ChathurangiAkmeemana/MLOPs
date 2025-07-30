@@ -8,7 +8,7 @@ model = joblib.load('diabetes_model.pkl')
 
 @app.get("/")
 def read_root():
-    return {"message": "Diabetes prediction model"}
+    return {"message": "Diabetes prediction model by Group 1"}
 
 @app.post("/predict/")
 def predict(data: list):
