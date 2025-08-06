@@ -32,5 +32,7 @@ a. Clone the GitHub repository:
 -----------------------------------
 a. Create a `Dockerfile` in root:
 
-Run the App 
 docker run https://hub.docker.com/repository/docker/kavi12345678/diabetes-model
+# Run the app
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+
